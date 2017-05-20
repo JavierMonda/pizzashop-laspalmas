@@ -3,11 +3,6 @@ import html from './iltoolbar.html';
 
 export const ilToolbar = {
   template: html,
-  controller: 'appCtrl'
-  /*bindings:{
-    isSideNavClosed: '@',
-    isOpenSideNav: '@',
-    isCloseSideNav: '@'
-  }*/
+  controller: 'appCtrl' //Quitar el controlador y usar Bindings
 }
 App.component('ilToolbar', ilToolbar);
