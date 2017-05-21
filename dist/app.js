@@ -88345,6 +88345,7 @@ const ilContent = {
 };
 App.component('ilContent', ilContent);
 
+//Childs
 const ilApp = {
   template: html,
   controller: 'appCtrl'
