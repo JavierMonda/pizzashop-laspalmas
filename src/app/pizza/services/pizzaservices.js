@@ -9,7 +9,6 @@ class pizzaService extends baseService{
     }
 
     getPizza(id) {
-        //let url = resolveUrl.resolve(`{this.path}/${id}`);
         return this.http.get(
             super.getRouteById(id)
         );

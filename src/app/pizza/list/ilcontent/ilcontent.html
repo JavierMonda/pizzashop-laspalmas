@@ -1,0 +1,25 @@
+<md-content layout-padding>
+    <form name="commentForm">
+        <md-input-container class="md-block">
+            <label>Score</label>
+            <input required type="number" step="any" name="score" ng-model="$ctrl.comment.score" min="0" max="10" />
+            <div ng-messages="commentForm.score.$error" multiple md-auto-hide="false">
+                <div ng-message="required">
+                    You've got to put a score!
+                </div>
+                <div ng-message="min">
+                    You should score at least 0.
+                </div>
+                <div ng-message="max">
+                    That's a little ridiculous.
+                </div>
+            </div>
+        </md-input-container>
+        <md-input-container class="md-block">
+            <textarea name="text" ng-model="$ctrl.comment.text" md-maxlength="150"></textarea>
+        </md-input-container>
+        <div>
+            <md-button type="submit" ng-click="$ctrl.submitComment()">Submit</md-button>
+        </div>
+    </form>
+</md-content>

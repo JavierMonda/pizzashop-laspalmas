@@ -1,0 +1,10 @@
+<md-list layout-padding ng-show="$ctrl.hasIngridients()">
+    <div class="md-title">Ingridients</div>
+    <md-list-item class="md-3-line" ng-repeat="ingridient in $ctrl.ingridients">
+        <div class="md-list-item-text">
+            <h3>{{ ingridient.name | capitalize }}:</h3>
+            <p>{{ ingridient.prize }}$</p>
+        </div>
+    </md-list-item>
+</md-list>
+

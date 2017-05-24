@@ -2,9 +2,9 @@ import { App } from '../../module';
 import html from './app.html';
 export {} from './appctrl';
 //Childs
-import {} from '../ilmenu/ilmenu.js';
-import {} from '../iltoolbar/iltoolbar.js';
-import {} from '../ilcontent/ilcontent.js';
+import {} from '../ilmenu';
+import {} from '../iltoolbar';
+import {} from '../ilcontent';
 
 
 export const ilApp = {
